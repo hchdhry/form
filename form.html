@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="parent">
+    <div class="left">
+        <img class="second-image" src="odin.jpg">
+        
+    </div>
+
+
+
+    <div class="right">
+        <div class="first">
+            
+            <h1>This is a demo registration page! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
+
+                You know you want to.</h1>
+    
+        </div>
+
+        <div class="second">
+            <form action="#">
+                <table>
+                  <tr>
+                    <td><label for="first-name">First Name</label></td>
+                    <td><input type="text" id="first-name" name="first-name"></td>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="last-name">Last Name</label></td>
+                    <td><input type="text" id="last-name" name="last-name"></td>
+                    <td><label for="phone-number">Phone Number</label></td>
+                    <td><input type="text" id="phone-number" name="phone-number"></td>
+                  </tr>
+                  <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                    <td><label for="confirmation">Confirm Password</label></td>
+                    <td><input type="password" id="confirmation" name="confirmation"></td>
+                  </tr>
+                </table>
+             
+                
+                
+                
+                
+                        </div>
+                
+                        <div class="third"> 
+                            <button type="submit" onclick="return validatePassword()">create account</button>
+                            <h3>Already have an account? <span class="log-in">log in</span></h3>
+                        </div>
+                    </form>
+
+</div>
+</div>
+
+
+
+
+<script>
+    function validatePassword() {
+        var password = document.getElementById("password").value;
+        var confirmation = document.getElementById("confirmation").value;
+        if (password != confirmation) {
+            alert("Passwords do not match");
+            return false;
+        }
+        return true;
+    }
+    function validations(){
+
+
+    }
+</script>
+</body>
+</html>
